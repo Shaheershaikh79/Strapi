@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_variations",
+  "info": {
+    "displayName": "variations",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::color.color"
+    },
+    "thicknesses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thickness.thickness"
+    },
+    "sizes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.size-with-price"
+    }
+  }
+}
