@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "send_messages",
+  "collectionName": "globals",
   "info": {
-    "singularName": "send-message",
-    "pluralName": "send-messages",
-    "displayName": "sendMessage",
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "global",
     "description": ""
   },
   "options": {
@@ -16,32 +16,30 @@
     }
   },
   "attributes": {
-    "name": {
-      "type": "string",
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.footer",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "phone": {
-      "type": "integer",
+    "header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.header",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "email": {
-      "type": "email",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "message": {
-      "type": "text",
+    "logo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.logo",
       "pluginOptions": {
         "i18n": {
           "localized": true
